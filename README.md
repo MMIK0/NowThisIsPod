@@ -12,4 +12,4 @@
 -Enjoy! :)
 
 
-![alt text](https://raw.githubusercontent.com/MMIK0/NowThisIsPod/master/rata.png)
+![alt text](https://raw.githubusercontent.com/MMIK0/NowThisIsPod/blob/master/rata.png)
