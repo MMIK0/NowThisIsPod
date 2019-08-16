@@ -1,6 +1,6 @@
-## NowThisIsPod
+# NowThisIsPod
 
-# Getting Started
+## Getting Started
 
 * Click the clone/download
 
@@ -9,11 +9,11 @@
 * Open the file called NowThisIsPod
 
 
-# Versioning
+## Versioning
 
 
 
-# Here are some pictures how the game looks:
+## Here are some pictures how the game looks:
 
 ![Rata](https://user-images.githubusercontent.com/35567342/62704420-05160a00-b9f4-11e9-9e45-8198aac64ac9.png)
 
