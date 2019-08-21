@@ -12,7 +12,7 @@
 
 ## Versioning:
 ### Newest version
-* [Version 1.0.2](https://github.com/MMIK0/NowThisIsPod/releases/tag/v1.0.3)
+* [Version 1.0.3](https://github.com/MMIK0/NowThisIsPod/releases/tag/v1.0.3)
 
 
 # Built using
