@@ -27,14 +27,15 @@ public class RaceController : MonoBehaviour
     {  
         StartCoroutine(CountDown(4.20));
     }
-     IEnumerator CountDown(double seconds) {
+    IEnumerator CountDown(double seconds)
+    {
 
         double count = seconds;
         while (count > 0) { 
          lapStartTime = Time.time;
         yield return new WaitForSeconds(1);
         count --;
-        }
+     }
         isRaceActive = true; 
         nextCheckpointNumber = 0;
         lapCount = 0;
@@ -62,9 +63,8 @@ public class RaceController : MonoBehaviour
     void Update()
     {
     
-        if(isRaceActive) {
-        
-            
+        if(isRaceActive)
+        {
             LapInfoText.text = TimeParser(Time.time - lapStartTime);
             CheckpointInfoText.text = ("CHECKPOINT " + (nextCheckpointNumber + 1) + " / " + checkpointCount + "\nLAP " + (lapCount + 1) + " / " + lapsInRace);
         }
@@ -78,22 +78,19 @@ public class RaceController : MonoBehaviour
 
     public void StartRace()
     {
-        
-            
-         
         activeCheckpoint = transform.GetChild(nextCheckpointNumber).GetComponent<Checkpoint>();
         activeCheckpoint.isActiveCheckpoint = true;
         lapStartTime = Time.time;
-        }
+    }
     
 
     public void CheckpointPassed()
     {
-         
-            
-         
+    
         activeCheckpoint.isActiveCheckpoint = false;
         nextCheckpointNumber++;
+
+
         if (nextCheckpointNumber < checkpointCount)
         {
             activeCheckpoint = transform.GetChild(nextCheckpointNumber).GetComponent<Checkpoint>();

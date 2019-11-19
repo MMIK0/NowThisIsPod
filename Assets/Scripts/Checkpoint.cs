@@ -36,7 +36,7 @@ public class Checkpoint : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Check if current checkpoint is active, and if the passed object was the player's ship
-        if (isActiveCheckpoint && other.tag == "Player")
+        if (isActiveCheckpoint && other.tag == "Player" | other.tag == "Player2")
         {
             passLight.intensity = 8.0f;
             passLight.color = Color.green;

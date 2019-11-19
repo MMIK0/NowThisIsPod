@@ -18,10 +18,12 @@ public class BoosterPad : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Time.time - lastTurboAt < turboDuration)
+     
+        if (Time.time - lastTurboAt < turboDuration && player.tag == "Player")
         {
             player.GetComponent<Rigidbody>().AddForce(transform.forward * turboAmount);
         }
+ 
     }
 
     private void OnTriggerEnter(Collider other)

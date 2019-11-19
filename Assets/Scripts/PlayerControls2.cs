@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerControls : MonoBehaviour
+public class PlayerControls2 : MonoBehaviour
 {
     private GameManagerScript GMS;
     public float thrustSpeed;
@@ -24,16 +24,18 @@ public class PlayerControls : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (gameObject.tag == "Player")
+       
+         if(gameObject.tag == "Player2")
         {
-            thrustInput = Input.GetAxis("Vertical_3"); 
-            turnInput = Input.GetAxis("Horizontal_3");
+            thrustInput = Input.GetAxis("Vertical_2");
+            turnInput = Input.GetAxis("Horizontal_2");
         }
+
     }
 
     void FixedUpdate()
     {
-        if(GMS.countDownDone == true ) {
+        if(GMS.countDownDone == true && gameObject.tag == "Player2") {
         // Turning the ship
         shipRigidBody.AddRelativeTorque(0f, turnInput * turnSpeed, 0f);
 
